@@ -9,6 +9,7 @@ header{
 
 main, footer{
     border: 1px solid green;
+    background-color: purple;
 }
 
 h1{
