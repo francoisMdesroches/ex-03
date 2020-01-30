@@ -775,6 +775,7 @@ desktop : 4 colonnes
   }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1000px) {
   #pied-page section {
     -ms-flex-wrap: nowrap;
@@ -791,6 +792,11 @@ desktop : 4 colonnes
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
   }
+=======
+main, footer{
+    border: 1px solid green;
+    background-color: purple;
+>>>>>>> 3d6c377a1cc1fc42bc76dfe2b64638bb9eab37eb
 }
 
 /*-------------------------------------------------------------- */
