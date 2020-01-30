@@ -1,31 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercie #1</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Premier Test Git</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Il y a un header!</h1>
-        <h2>et un sous-titre</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A officiis tempora labore praesentium, nisi nemo fugiat minus possimus. Maxime voluptatem aliquid voluptatibus dolor accusamus quisquam fugiat nesciunt a ut deleniti!</p>
-        <menu>Ceci est un menu</menu>
+        <section class="global">
+            <h1>Exercice #2</h1>
+            <h2>Introduction à Sass</h2>
+        </section>
     </header>
+    <div id='infos'>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <nav id='menu'>
+        <input id="checkMenu" type="checkbox">
+        <label id="btnMenu" for="checkMenu">&#9776;</label>
+        <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Vero</a></li>
+            <li><a href="">Aperiam</a></li>
+            <li><a href="">Reprehenderit</a></li>
+            <li><a href="">Incidunt</a></li>
+            <li><a href="">Est</a></li>
+            <li><a href="#"><label id="btnLoupe" for="checkLoupe">&#128269;</label></a></li>
+        </ul>
+    </nav>
+    <input id="checkLoupe" type="checkbox">
+    <label id="overlay-loupe" for="checkLoupe"></label>
+    <div id="barre-recherche" contenteditable="true"></div>
+    
     <main>
-        <h1>Titre principal lambda</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa porro repudiandae earum facere voluptatibus architecto animi cum illum odit itaque nobis neque, laboriosam perferendis nihil maiores corporis, quibusdam inventore necessitatibus?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto non perspiciatis repudiandae ea exercitationem, quis veritatis saepe harum iste vero est natus doloremque aut nostrum maiores ipsam expedita at asperiores.</p>
-        <p>Labore recusandae eum soluta, numquam cum nobis ea? Debitis ipsam inventore assumenda vero eius, iusto accusamus perspiciatis! Dicta excepturi sed distinctio magnam recusandae. Commodi dicta quaerat repellat architecto neque ab?</p>
-        <p>Expedita itaque maiores delectus, quis laudantium tempore corporis eveniet velit suscipit reprehenderit dolorem in? Incidunt quos aliquam velit ut amet, libero, doloribus ullam suscipit eos officiis iste impedit explicabo laborum!</p>
-        <p>Earum fugit placeat quod culpa eos. Illum nostrum error at commodi? Quod consequuntur porro rerum itaque corporis libero voluptatibus, dolorum repellendus architecto ullam. Nobis hic quo expedita, architecto dolores id.</p>
+        <section class="global">
+       
+            <h1>SCSS, Sassy CSS et Sass</h1>
+
+<p>
+La différence est l'interface utilisateur. Sous l'extérieur textuel, ils sont identiques. C'est pourquoi les fichiers
+sass et scss peuvent s'importer. </p>
+<p>
+En fait, Sass a quatre analyseurs syntaxiques: scss, sass, CSS et LESS. Tous ces
+éléments convertissent une syntaxe différente en une arborescence de syntaxe abstraite qui est ensuite traitée en sortie
+CSS ou même dans l'un des autres formats via l'outil sass-convert.
+</p>
+<p>
+Utilisez la syntaxe que vous préférez, les deux sont entièrement pris en charge et vous pouvez les changer plus tard si
+vous changez d'avis.
+</p>
+<p>
+    L'avantage du format SCSS c'est que l'on peut directement importer un fichier CSS et il sera considéré directement comme du SCSS par le compilateur Sass. La conversion est plus facile que si on utilise un fichier .sass
+
+</p>
+
+            
+        </section>
     </main>
-    <footer>
-        <p>ceci est un footer</p>
-        <p>contenu ajouté!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi doloremque voluptatum sequi maxime cupiditate voluptates nobis quis praesentium natus quam ullam saepe fuga, quidem consequatur, sed dolorum voluptas vitae?</p>
+
+    <footer id='pied-page'>
+        <section class="global">
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Soluta, distinctio</li>
+                <li>Non, praesentium</li>
+                <li>Cupiditate, deserunt</li>
+                <li>Error, laborum</li>
+            </ul>
+            <ul>
+                <li>Dolore, architecto</li>
+                <li>Illo, ipsum</li>
+                <li>Impedit, laborum</li>
+                <li>Dolores, quisquam</li>
+                <li>Cupiditate, dolores</li>
+            </ul>
+            <ul>
+                <li>Distinctio, iste</li>
+                <li>Porro, repellat</li>
+                <li>Cumque, eligendi</li>
+                <li>Suscipit, enim</li>
+                <li>Sapiente, impedit</li>
+            </ul>
+            <ul>
+                <li>Voluptates, culpa</li>
+                <li>Harum, adipisci</li>
+                <li>Recusandae, ipsam</li>
+                <li>Delectus, dolores</li>
+                <li>Animi, voluptatum</li>
+            </ul>
+        </section>
     </footer>
 </body>
+<script>
+    window.addEventListener('load', function () {
+        let elmChkMenu = document.querySelector('#checkMenu')
+        let elmBtnMenu = document.querySelector('#btnMenu')
+
+        window.addEventListener('resize', function () {
+            // console.log(window.innerWidth)
+            if (window.innerWidth >= 500) {
+                elmChkMenu.checked = false
+            }
+        })
+    })
+</script>
 </html>

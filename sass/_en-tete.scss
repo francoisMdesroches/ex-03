@@ -1,0 +1,47 @@
+//La barre de recherche est au-dessus du menu, avec une couleur noire foncée
+
+#barre-recherche{
+    width:100%;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    z-index: -1;
+    color:white;
+    //Modifications esthétiques (input)
+    padding-left: 5vw;
+    padding-top:10px;
+    height: 30px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+//Pour qu'on puisse interagir avec la page en temps normal
+#overlay-loupe{
+    display: none;
+}
+
+//Ajouts au bouton de loupe
+#btnLoupe{
+    width:50%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+//Faire apparaître, et augmenter le z-index!
+#checkLoupe:checked ~ #barre-recherche{
+    z-index: 1001;
+    opacity: 1;
+}
+
+//Pour pouvoir cliquer ailleurs dans la page et sortir de la barre
+#checkLoupe:checked ~ #overlay-loupe{
+    display: block;
+    z-index: 1000;
+}
+
+//La barre en haut de la page
+#infos{
+    width:100%;
+    background-color: $couleur_rouge;
+    color:white;
+    text-align: left;
+}
